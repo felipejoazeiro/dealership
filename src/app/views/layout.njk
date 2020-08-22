@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Concessionária Hodum</title>
+            {% block style %}
+                <link rel="stylesheet" href="/style.css">
+            {% endblock style %}
+    </head>
+    <body>
+        <header>
+            <div class="links">
+                <a href="/teachers">Agências</a>
+                <a href="/students">Modelos</a>
+            </div>
+        </header>
+        {% block content %}
+        {% endblock content %}
+        <script src="/scripts.js"></script>
+    </body>
+</html>
