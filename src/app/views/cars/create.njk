@@ -2,8 +2,9 @@
 {% block content %}
     <main>
         <h1>Adicionar Carro</h1>
-        <form action="">
+        <form action="/cars" method="POST">
             {% include 'cars/fields.njk'  %}
+            <button type="submit">Salvar</button>
         </form>
     </main>
 {% endblock content %}

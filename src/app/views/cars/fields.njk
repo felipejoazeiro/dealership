@@ -29,3 +29,18 @@
         <input type="text" name="direction" value="{{cars.direction}}">
     </div>
 </div>
+<div class="item">
+    <div>Preço</div>
+    <div>
+        <input type="text" name="price" value="{{cars.price}}" onkeydown="Mask.apply(this, 'formatBRL')">
+    </div>
+    {% if cars.old_price %}
+        <input type="hidden" name="old_price" value="{{cars.old_price}}">
+    {% endif %}
+</div>
+<div class="item">
+    <div>Quantidade</div>
+    <div>
+        <input type="number" name="quantity" value="{{cars.quantity}}">
+    </div>
+</div>

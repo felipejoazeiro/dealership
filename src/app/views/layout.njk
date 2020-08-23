@@ -2,19 +2,12 @@
 <html>
     <head>
             <title>Concessionária Hodum</title>
-            {% block style %}
-                <link rel="stylesheet" href="/style.css">
-            {% endblock style %}
+            <link rel="stylesheet" href="/style.css">
     </head>
     <body>
-        <header>
-            <div class="links">
-                <a href="/teachers">Agências</a>
-                <a href="/students">Modelos</a>
-            </div>
-        </header>
+        {%include 'parts/header.njk'%}
         {% block content %}
         {% endblock content %}
-        <script src="/scripts.js"></script>
+        {%include 'parts/footer.njk'%}
     </body>
 </html>
