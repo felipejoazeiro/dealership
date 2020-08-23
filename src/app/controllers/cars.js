@@ -26,7 +26,7 @@ module.exports={
             }
         }
         let results = await Car.create(req.body)
-        const carsId = results.rows[0].index
+        const carsId = results.rows[0].id
         
         return res.redirect(`admin/cars/${carsId}`)
     }
